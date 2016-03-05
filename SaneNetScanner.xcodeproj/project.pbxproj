@@ -297,7 +297,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				HEADER_SEARCH_PATHS = /usr/local/include/;
 				INFOPLIST_FILE = "SaneNetScanner/SaneNetScanner-Info.plist";
 				INSTALL_PATH = "/Library/Image Capture/Devices";
@@ -325,7 +324,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				HEADER_SEARCH_PATHS = /usr/local/include/;
 				INFOPLIST_FILE = "SaneNetScanner/SaneNetScanner-Info.plist";
 				INSTALL_PATH = "/Library/Image Capture/Devices";
@@ -337,6 +335,7 @@
 		AA45B44115CED4D9004A8357 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.christian-speich.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -346,6 +345,7 @@
 		AA45B44215CED4D9004A8357 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.christian-speich.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
