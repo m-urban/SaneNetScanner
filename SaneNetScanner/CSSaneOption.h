@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#include "sane/sane.h"
+#import <sane/sane.h>
 #import "CSSaneOptionConstraint.h"
 
 extern NSString* kSaneScanResolution;

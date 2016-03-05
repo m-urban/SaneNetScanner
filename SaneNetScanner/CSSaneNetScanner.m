@@ -13,7 +13,7 @@
 #import "CSSaneOption.h"
 #import "CSSaneOptionRangeConstraint.h"
 
-#include "sane/sane.h"
+#import <sane/sane.h>
 
 typedef enum {
     ProgressNotificationsNone,

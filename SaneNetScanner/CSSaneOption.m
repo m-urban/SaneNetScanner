@@ -8,7 +8,7 @@
 
 #import "CSSaneOptionConstraint.h"
 #import "CSSaneOption.h"
-#include "sane/saneopts.h"
+#import <sane/saneopts.h>
 
 NSString* kSaneScanResolution = (NSString*)CFSTR(SANE_NAME_SCAN_RESOLUTION);
 NSString* kSaneScanMode = (NSString*)CFSTR(SANE_NAME_SCAN_MODE);

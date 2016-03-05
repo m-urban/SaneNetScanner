@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "ICD_Trampolins.h"
-#import "sane/sane.h"
+#import <sane/sane.h>
 
 void AuthCallBack(SANE_String_Const resource,
                   SANE_Char *username,
