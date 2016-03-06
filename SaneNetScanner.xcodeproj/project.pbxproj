@@ -281,6 +281,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
+				DSTROOT = "";
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -299,10 +300,13 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = /usr/local/include/;
 				INFOPLIST_FILE = "SaneNetScanner/SaneNetScanner-Info.plist";
+				INSTALL_GROUP = admin;
+				INSTALL_OWNER = root;
 				INSTALL_PATH = "/Library/Image Capture/Devices";
 				LIBRARY_SEARCH_PATHS = /usr/local/lib/;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -314,8 +318,8 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DSTROOT = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -326,6 +330,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = /usr/local/include/;
 				INFOPLIST_FILE = "SaneNetScanner/SaneNetScanner-Info.plist";
+				INSTALL_GROUP = admin;
+				INSTALL_OWNER = root;
 				INSTALL_PATH = "/Library/Image Capture/Devices";
 				LIBRARY_SEARCH_PATHS = /usr/local/lib/;
 				SDKROOT = macosx;
@@ -336,6 +342,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
+				DSTROOT = "";
+				INSTALL_PATH = "/Library/Image Capture/Devices";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.christian-speich.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -346,6 +354,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
+				DSTROOT = "";
+				INSTALL_PATH = "/Library/Image Capture/Devices";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.christian-speich.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
