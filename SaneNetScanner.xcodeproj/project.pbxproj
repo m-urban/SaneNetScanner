@@ -355,6 +355,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				DSTROOT = "";
+				ENABLE_NS_ASSERTIONS = NO;
 				INSTALL_PATH = "/Library/Image Capture/Devices";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.christian-speich.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

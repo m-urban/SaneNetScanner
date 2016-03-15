@@ -116,9 +116,9 @@ typedef enum {
     SANE_Status status;
     
     for (NSString* address in self.saneAdresses) {
-        NSString* fullName = [NSString stringWithFormat:@"%@:%@", address, self.deviceName];
+        NSString* fullName = [NSString stringWithFormat:@"net:%@:%@", address, self.deviceName];
         
-        Log(@"Try open to %@", fullName);
+        Log(@"Try to open %@", fullName);
         status = sane_open([fullName UTF8String], &handle);
         
         // If open succeeded we can quit tring
