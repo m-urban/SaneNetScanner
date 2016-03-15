@@ -82,7 +82,8 @@ ICAError ICD_ScannerOpenTCPIPDevice(CFDictionaryRef params,
     strlcpy((char*)newDeviceObjectInfo->name, [scanner.prettyName UTF8String], sizeof(newDeviceObjectInfo->name));
 
     // Now set the creation date
-    NSDateFormatter* df  = [[NSDateFormatter alloc] initWithDateFormat:@"%Y:%m:%d %H:%M:%S" allowNaturalLanguage:YES];
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    [df setDateFormat:@"%Y:%m:%d %H:%M:%S"];
     NSDate* d = [NSDate date];
     NSString* ds = [df stringFromDate:d];
     
